@@ -38,7 +38,11 @@ export default function ShowBooks() {
           <div class="book-cards">
             <div class="book-card">
               <div class="book-cover">
-                <img src={book.coverImage} alt="" />
+                <img
+                  src={book.coverImage}
+                  alt="
+                img"
+                />
               </div>
               <h3 class="book-title">{book.title}</h3>
               <p class="book-author">By written: {book.author}</p>
