@@ -1,6 +1,3 @@
-"use client";
-"server client";
-
 import Image from "next/image";
 
 const getData = async () => {
