@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const getData = async () => {
   const req = await fetch("https://dummyjson.com/products");
   const data = await req.json();
@@ -26,7 +24,7 @@ async function Home() {
                     Buy
                   </button>
                 </div>
-                <Image
+                <img
                   className="max-h-[160px]  md:max-h-[200px] w-full object-cover rounded-xl"
                   src={prod.thumbnail}
                   alt="img"

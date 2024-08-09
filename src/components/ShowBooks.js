@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 
 export default function ShowBooks() {
   const [books, setBooks] = useState([]);
@@ -39,7 +38,7 @@ export default function ShowBooks() {
           <div key={book.id} className="book-cards">
             <div className="book-card">
               <div className="book-cover">
-                <Image
+                <img
                   src={book.coverImage}
                   alt="
                 img"
