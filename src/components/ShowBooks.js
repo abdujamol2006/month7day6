@@ -30,7 +30,7 @@ export default function ShowBooks() {
 
   return (
     <div>
-      <h2>All Books</h2>
+      <h2 className="h2">All Books</h2>
       <ul>
         {books.map((book) => (
           <div class="book-cards">
