@@ -1,3 +1,12 @@
 {
-  "books": []
+  "books": [
+    {
+      "id": "d63b",
+      "title": "Halolim",
+      "author": "Abdujamol",
+      "coverImage": "https://avatars.mds.yandex.net/i?id=89437b41ad20b2fbae071b39d21b31ec2d6eeced9574583f-10496575-images-thumbs&n=13",
+      "description": "Juda ko'p",
+      "price": "999999999999"
+    }
+  ]
 }

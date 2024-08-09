@@ -8,7 +8,7 @@ function Navbar() {
       <nav className="flex gap-[100px]">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
+        <Link href="/contact">Create Books</Link>
         <Link href="/allBooks">All Books</Link>
       </nav>
     </div>
