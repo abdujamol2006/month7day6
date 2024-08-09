@@ -35,18 +35,18 @@ export default function ShowBooks() {
       <h2 className="h2">All Books</h2>
       <ul>
         {books.data.map((book) => (
-          <div class="book-cards">
-            <div class="book-card">
-              <div class="book-cover">
+          <div key={book.id} className="book-cards">
+            <div className="book-card">
+              <div className="book-cover">
                 <img
                   src={book.coverImage}
                   alt="
                 img"
                 />
               </div>
-              <h3 class="book-title">{book.title}</h3>
-              <p class="book-author">By written: {book.author}</p>
-              <p class="book-price">Price: {book.price}$</p>
+              <h3 className="book-title">{book.title}</h3>
+              <p className="book-author">By written: {book.author}</p>
+              <p className="book-price">Price: {book.price}$</p>
             </div>
           </div>
         ))}

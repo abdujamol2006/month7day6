@@ -13,8 +13,8 @@ async function Home() {
       {data.products.map((prod) => {
         return (
           <div className="">
-            <div className=" p-4 py-4 grid md:grid-cols-3 gap-4">
-              <div key={prod.id} className="rounded-xl relative">
+            <div key={prod.id} className="  p-4 py-4 grid md:grid-cols-3 gap-4">
+              <div className="rounded-xl relative">
                 <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
                   <p className="font-bold text-2xl px-2 pt-4">{prod.title}</p>
                   <p className="px-2">{prod.description.slice(0, 20)}</p>
