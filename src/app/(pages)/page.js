@@ -1,3 +1,5 @@
+"use client";
+"server client";
 const getData = async () => {
   const req = await fetch("https://dummyjson.com/products");
   const data = await req.json();
@@ -12,7 +14,7 @@ async function Home() {
       <h1 className="text-3xl font-bold">Products</h1>
       {data.products.map((prod) => {
         return (
-          <div className="">
+          <div key={prod.id} className="">
             <div key={prod.id} className="  p-4 py-4 grid md:grid-cols-3 gap-4">
               <div className="rounded-xl relative">
                 <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
