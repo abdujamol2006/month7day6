@@ -1,4 +1,4 @@
-/*const getData = async () => {
+const getData = async () => {
   const req = await fetch("https://dummyjson.com/products");
   const data = await req.json();
   return { data };
@@ -38,8 +38,8 @@ async function Home() {
   );
 }
 
-export default Home;*/
-"use client";
+export default Home;
+/*"use client";
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -102,4 +102,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home;*/
