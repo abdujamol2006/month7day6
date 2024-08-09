@@ -11,7 +11,9 @@ export default function ShowBooks() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await fetch("http://localhost:4000/books"); // Replace with your actual API endpoint
+        const response = await fetch(
+          " https://online-json-server-api.up.railway.app/project/66b5fd9c340dd55056fb6f0a/books"
+        ); // Replace with your actual API endpoint
         const data = await response.json();
         setBooks(data);
       } catch (error) {
@@ -32,7 +34,7 @@ export default function ShowBooks() {
     <div>
       <h2 className="h2">All Books</h2>
       <ul>
-        {books.map((book) => (
+        {books.data.map((book) => (
           <div class="book-cards">
             <div class="book-card">
               <div class="book-cover">

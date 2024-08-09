@@ -39,11 +39,14 @@ export default function Form() {
 
     // Example: sending data to a fake API
     try {
-      const response = await fetch("http://localhost:4000/books", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(bookCardData),
-      });
+      const response = await fetch(
+        " https://online-json-server-api.up.railway.app/project/66b5fd9c340dd55056fb6f0a/books",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(bookCardData),
+        }
+      );
 
       if (response.ok) {
         console.log("Book card created successfully!");
